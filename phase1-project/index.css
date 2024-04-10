@@ -109,10 +109,11 @@ padding: 5px;
 width: 150px;
 }
 .card {
-    background: #e0e0e0;
+    background: #e27777;
     display: inline-grid;
     padding: 0px;
     text-align: center;
-    margin-left: 120px; 
+    margin-left: 220px; 
     width: 500px;
+    border-radius: 10px;
     } 
