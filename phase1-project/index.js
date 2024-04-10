@@ -43,3 +43,57 @@ function renderOneDriver(driver) {
     upvoteDriver(driver);
   });
 }
+
+card.querySelector("#delbtn").addEventListener("click", () => {
+  card.remove();
+  deleteDriver(driver.id);
+});
+document.querySelector(".driver-list").appendChild(card);
+
+function getAllDrivers() {
+fetch("http://localhost:3000/drivers")
+  .then((res) => res.json())
+  .then((drivers) => {
+    drivers.forEach((driver) => renderOneDriver(driver));
+  });
+}
+
+function addNewDriver(newDriverObj) {
+fetch("http://localhost:3000/drivers", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(newDriverObj),
+})
+  .then((res) => res.json())
+  .then((driver) => console.log(driver));
+}
+function upvoteDriver(newDriverObj) {
+fetch(`http://localhost:3000/drivers/${newDriverObj.id}`, {
+  method: "PATCH",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(newDriverObj),
+})
+  .then((res) => res.json())
+  .then((driver) => console.log(driver));
+}
+
+function deleteDriver(id) {
+fetch(`http://localhost:3000/drivers/${id}`, {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+})
+  .then((res) => res.json())
+  .then((driver) => console.log(driver));
+}
+
+function initialize() {
+getAllDrivers();
+}
+
+initialize();
