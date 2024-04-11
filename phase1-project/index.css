@@ -15,18 +15,18 @@ h1{
     font-size: 75px;
 }
 .one{
-    background-color: white;
+    background-color: #d4d4d4;
     height: 100vh;
     display: flex;
 }
 .two{
-    background-color: purple;
+    background-color: #c1c1c1;
     height: 100vh;
     display: flex;
 }
 .three{
-    background-color: green;
-    height: 300vh;
+    background-color: rgb(123, 123, 123);
+    height: 1500vh;
     display: flex;
 }
 
@@ -35,7 +35,7 @@ nav{
     left: 0;
     height: 100vh;
     padding: 2em;
-    background: black;
+    background: #1f1f1f;
     color: white;
 }
 a{
@@ -89,9 +89,9 @@ a{
 .form {
     max-width: 500px;
     margin: 2rem auto;
-    border: 2px solid black;
+    border: 2px solid #a80000;
     padding: 2rem;
-    background-color: #773F7E;
+    background-color: #dddddd;
     border-radius: 20px;
 }   
 input ,textarea{
@@ -111,7 +111,7 @@ padding: 5px;
 width: 150px;
 }
 .card {
-    background: #f6f6f6;
+    background: rgb(182, 56, 56);
     display: inline-grid;
     padding: 10px;
     text-align: center;
