@@ -20,12 +20,12 @@ h1{
     display: flex;
 }
 .two{
-    background-color: #c1c1c1;
+    background-color: #dad6d6;
     height: 100vh;
     display: flex;
 }
 .three{
-    background-color: rgb(123, 123, 123);
+    background-color: rgb(235, 232, 232);
     height: 1500vh;
     display: flex;
 }
@@ -36,7 +36,7 @@ nav{
     height: 100vh;
     padding: 2em;
     background: #1f1f1f;
-    color: white;
+    color:#f80000;
 }
 a{
     color: inherit;
