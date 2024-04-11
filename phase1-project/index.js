@@ -39,8 +39,9 @@ function renderOneDriver(driver) {
       <p>Nationality: ${driver.nationality}</p>
     </div>
     <div class="Buttons">
-      <button id="delbtn"> Delete </button> 
-      <button id="editbtn"> Upvote </button> 
+      <button id="delbtn"> Delete</button> 
+      <button id="editbtn"> <img class="upvotebtn" src="https://cdn3.emoji.gg/emojis/3388_Upvote.png"> </button> 
+      <button id="editbtn2"> Downvote </button> 
     </div>
   `;
   // Event listener for upvote button
@@ -49,7 +50,11 @@ function renderOneDriver(driver) {
     card.querySelector("span").textContent = driver.upvotes;
     upvoteDriver(driver); // Update upvotes on server
   });
-
+  card.querySelector("#editbtn2").addEventListener("click", () => {
+    driver.upvotes--;
+    card.querySelector("span").textContent = driver.upvotes;
+    downvoteDriver(driver); // Update downvotes on server
+  });
   // Event listener for delete button which when clicked deletes the card from the UI and the server
   card.querySelector("#delbtn").addEventListener("click", () => {
     card.remove();
@@ -94,6 +99,18 @@ function upvoteDriver(newDriverObj) {
     .then((driver) => console.log(driver));
 }
 
+// Function to update the upvotes of a driver on the server
+function downvoteDriver(newDriverObj) {
+  fetch(`http://localhost:3000/drivers/${newDriverObj.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newDriverObj),
+  })
+    .then((res) => res.json())
+    .then((driver) => console.log(driver));
+}
 // Function to delete a driver from the server
 function deleteDriver(id) {
   fetch(`http://localhost:3000/drivers/${id}`, {

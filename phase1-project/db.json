@@ -19,7 +19,7 @@
       "dateOfBirth": "1913-03-21",
       "nationality": "British",
       "imageUrl": "https://www.f1forgottendrivers.com/wp-content/uploads/300-port-abeca.jpg",
-      "upvotes": 1,
+      "upvotes": 0,
       "id": "5a71"
     },
     {
@@ -340,6 +340,17 @@
       "nationality": "british",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg/330px-Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg",
       "upvotes": 3
+    },
+    {
+      "id": "090f",
+      "driverId": "lombardi",
+      "url": "https://en.wikipedia.org/wiki/Lella_Lombardi",
+      "givenName": "lella",
+      "familyName": "lombardi",
+      "dateOfBirth": "1941-03-26",
+      "nationality": "italian",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lella-Garage-Reading-04.jpg/330px-Lella-Garage-Reading-04.jpg",
+      "upvotes": 1
     }
   ]
 }
