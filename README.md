@@ -21,7 +21,7 @@ Fork and clone the repo onto your device.
 
 ### Executing program
 
-To execute the program first enter the following command while in the directory of the project
+To execute the program first enter the following command while in the Phase1-project folder to start the server
 
 ```
 json-server --watch db.json
