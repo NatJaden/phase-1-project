@@ -15,7 +15,8 @@ To install the project navigate to the gihut page [https://github.com/NatJaden/p
 Fork and clone the repo onto your device.
 ### Executing program
 To execute the program first enter the command 
-```json-server --watch db.json
+```
+json-server --watch db.json
 ```  
 while in the directory of the project 
 
