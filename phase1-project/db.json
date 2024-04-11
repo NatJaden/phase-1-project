@@ -329,6 +329,17 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Rene_Arnoux_WSR2008_HU.png/330px-Rene_Arnoux_WSR2008_HU.png",
       "upvotes": 0,
       "id": "6808"
+    },
+    {
+      "id": "6098",
+      "driverId": "hamilton",
+      "url": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+      "givenName": "Lewis ",
+      "familyName": "Hamilton",
+      "dateOfBirth": "1985-01-07",
+      "nationality": "british",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg/330px-Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg",
+      "upvotes": 3
     }
   ]
 }
