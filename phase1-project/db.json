@@ -52,7 +52,7 @@
       "dateOfBirth": "1913-12-15",
       "nationality": "American",
       "imageUrl": "https://cdm17257.contentdm.oclc.org/digital/api/singleitem/image/p17257coll1/602504/default.jpg",
-      "upvotes": 0,
+      "upvotes": -2,
       "id": "cbe6"
     },
     {
@@ -63,7 +63,7 @@
       "dateOfBirth": "1921-11-05",
       "nationality": "German",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/90/Kurt_Adolff.png",
-      "upvotes": 0,
+      "upvotes": 2,
       "id": "1601"
     },
     {
@@ -74,7 +74,7 @@
       "dateOfBirth": "1913-08-21",
       "nationality": "American",
       "imageUrl": "https://imsmuseum.org/wp-content/uploads/2018/05/Freddie-Agabashian.jpeg",
-      "upvotes": 0,
+      "upvotes": 1,
       "id": "eb5d"
     },
     {
@@ -339,7 +339,7 @@
       "dateOfBirth": "1985-01-07",
       "nationality": "british",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg/330px-Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "id": "090f",
@@ -351,6 +351,17 @@
       "nationality": "italian",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lella-Garage-Reading-04.jpg/330px-Lella-Garage-Reading-04.jpg",
       "upvotes": 1
+    },
+    {
+      "id": "ace3",
+      "driverId": "schumacher",
+      "url": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+      "givenName": "Michael",
+      "familyName": "Schumacher",
+      "dateOfBirth": "1969-01-03",
+      "nationality": "german",
+      "imageUrl": "https://www.shutterstock.com/image-photo/michael-schumacher-7-f1-times-260nw-766173.jpg",
+      "upvotes": 0
     }
   ]
 }

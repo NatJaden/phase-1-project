@@ -30,7 +30,7 @@ function renderOneDriver(driver) {
     <div class="image-container">
       <img src ="${driver.imageUrl}" class = "driver-image">
     </div>
-    <p> <span class= "upVotes"> ${driver.upvotes}<span> Upvotes </p>
+    <p> <span class= "upVotes"> ${driver.upvotes}<span> votes </p>
     <div class="content">
       <h4>${driver.givenName} ${driver.familyName}</h4>
       <p>Driver ID: ${driver.driverId}</p>
@@ -40,8 +40,8 @@ function renderOneDriver(driver) {
     </div>
     <div class="Buttons">
       <button id="delbtn"> Delete</button> 
-      <button id="editbtn">Upvote </button> 
-      <button id="editbtn2">Downvote </button> 
+      <button id="editbtn">Upvote</button> 
+      <button id="editbtn2">Downvote</button> 
     </div>
   `;
   // Event listener for upvote button
