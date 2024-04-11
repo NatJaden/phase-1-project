@@ -35,6 +35,11 @@ On the page you can now navigate to the 'Add Cards' section to add a driver's ca
 
 Any cards added , deleted , upvoted or downvoted is updated both in the UI and the server
 
+
+
+## Inspirations
+This project drew insportaion from the 'WEEK 3:MONDAY' canvas content 
+
 ## Help
 
 If you encounter any problems reach out to me on: [https://github.com/NatJaden]
