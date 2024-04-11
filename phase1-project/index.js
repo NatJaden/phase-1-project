@@ -40,8 +40,8 @@ function renderOneDriver(driver) {
     </div>
     <div class="Buttons">
       <button id="delbtn"> Delete</button> 
-      <button id="editbtn"> <img class="upvotebtn" src="https://cdn3.emoji.gg/emojis/3388_Upvote.png"> </button> 
-      <button id="editbtn2"> Downvote </button> 
+      <button id="editbtn">Upvote </button> 
+      <button id="editbtn2">Downvote </button> 
     </div>
   `;
   // Event listener for upvote button

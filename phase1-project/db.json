@@ -8,7 +8,7 @@
       "dateOfBirth": "1932-07-10",
       "nationality": "Italian",
       "imageUrl": "https://alchetron.com/cdn/carlo-maria-abate-378d1e3a-392e-49c6-9a87-e1c00b28715-resize-750.jpg",
-      "upvotes": 2,
+      "upvotes": 3,
       "id": "3ccb"
     },
     {
@@ -19,7 +19,7 @@
       "dateOfBirth": "1913-03-21",
       "nationality": "British",
       "imageUrl": "https://www.f1forgottendrivers.com/wp-content/uploads/300-port-abeca.jpg",
-      "upvotes": 0,
+      "upvotes": -1,
       "id": "5a71"
     },
     {
