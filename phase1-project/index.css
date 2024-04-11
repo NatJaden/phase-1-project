@@ -87,7 +87,7 @@ a{
 
 .form-div {
     margin-left: 150px;  
-    margin-top: 150px;
+    margin-top: 120px;
     align-content: center;
     width: 500px;
 }
@@ -96,7 +96,7 @@ a{
     max-width: 500px;
     margin: 2rem auto;
     border: 2px solid #a80000;
-    padding: 2rem;
+    padding: 20px;
     background-color: #dddddd;
     border-radius: 15px
 }   
