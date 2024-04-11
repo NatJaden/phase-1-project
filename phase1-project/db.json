@@ -19,7 +19,7 @@
       "dateOfBirth": "1913-03-21",
       "nationality": "British",
       "imageUrl": "https://www.f1forgottendrivers.com/wp-content/uploads/300-port-abeca.jpg",
-      "upvotes": -1,
+      "upvotes": -2,
       "id": "5a71"
     },
     {
@@ -351,17 +351,6 @@
       "nationality": "italian",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lella-Garage-Reading-04.jpg/330px-Lella-Garage-Reading-04.jpg",
       "upvotes": 1
-    },
-    {
-      "id": "ace3",
-      "driverId": "schumacher",
-      "url": "https://en.wikipedia.org/wiki/Michael_Schumacher",
-      "givenName": "Michael",
-      "familyName": "Schumacher",
-      "dateOfBirth": "1969-01-03",
-      "nationality": "german",
-      "imageUrl": "https://www.shutterstock.com/image-photo/michael-schumacher-7-f1-times-260nw-766173.jpg",
-      "upvotes": 0
     }
   ]
 }
