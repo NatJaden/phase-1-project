@@ -3,8 +3,7 @@ document.querySelector(".form").addEventListener("submit", newDriver);
 
 // Function to handle form submission
 function newDriver(e) {
-  e.preventDefault(); // Prevent default form submission
-  // Gets the data entered into the for
+  e.preventDefault(); // Prevents default
   let newDriverObj = {
     driverId: e.target.driverId.value,
     url: e.target.url.value,
@@ -13,7 +12,7 @@ function newDriver(e) {
     dateOfBirth: e.target.dateOfBirth.value,
     nationality: e.target.nationality.value,
     imageUrl: e.target.imageUrl.value,
-    upvotes: 0, // Sets the upvotes to 0
+    upvotes: 0,
   };
   // Calls the function that renders the new driver card
   renderOneDriver(newDriverObj);
@@ -48,14 +47,14 @@ function renderOneDriver(driver) {
   card.querySelector("#editbtn").addEventListener("click", () => {
     driver.upvotes++;
     card.querySelector("span").textContent = driver.upvotes;
-    upvoteDriver(driver); // Update upvotes on server
+    upvoteDriver(driver); // Update upvotes
   });
   card.querySelector("#editbtn2").addEventListener("click", () => {
     driver.upvotes--;
     card.querySelector("span").textContent = driver.upvotes;
-    downvoteDriver(driver); // Update downvotes on server
+    downvoteDriver(driver); // Update downvotes
   });
-  // Event listener for delete button which when clicked deletes the card from the UI and the server
+  // Event listener for delete button
   card.querySelector("#delbtn").addEventListener("click", () => {
     card.remove();
     deleteDriver(driver.id);
@@ -64,7 +63,7 @@ function renderOneDriver(driver) {
   document.querySelector(".driver-list").appendChild(card);
 }
 
-// Function to fetch all drivers from the server
+// Function to fetch all drivers
 function getAllDrivers() {
   fetch("http://localhost:3000/drivers")
     .then((res) => res.json())
@@ -73,7 +72,7 @@ function getAllDrivers() {
     });
 }
 
-// Function to add a new driver to the server
+// Function to add a new driver
 function addNewDriver(newDriverObj) {
   fetch("http://localhost:3000/drivers", {
     method: "POST",
@@ -86,7 +85,7 @@ function addNewDriver(newDriverObj) {
     .then((driver) => console.log(driver));
 }
 
-// Function to update the upvotes of a driver on the server
+// Function to update the upvotes
 function upvoteDriver(newDriverObj) {
   fetch(`http://localhost:3000/drivers/${newDriverObj.id}`, {
     method: "PATCH",
@@ -99,7 +98,7 @@ function upvoteDriver(newDriverObj) {
     .then((driver) => console.log(driver));
 }
 
-// Function to update the upvotes of a driver on the server
+// Function to update the upvotes
 function downvoteDriver(newDriverObj) {
   fetch(`http://localhost:3000/drivers/${newDriverObj.id}`, {
     method: "PATCH",
@@ -111,7 +110,7 @@ function downvoteDriver(newDriverObj) {
     .then((res) => res.json())
     .then((driver) => console.log(driver));
 }
-// Function to delete a driver from the server
+// Function to delete a driver
 function deleteDriver(id) {
   fetch(`http://localhost:3000/drivers/${id}`, {
     method: "DELETE",
@@ -123,7 +122,7 @@ function deleteDriver(id) {
     .then((driver) => console.log(driver));
 }
 
-// Function to initialize the application
+// Function to initialize
 function initialize() {
   getAllDrivers();
 }
